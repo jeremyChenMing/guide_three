@@ -1,0 +1,173 @@
+.loginPad {
+	width: 540px;
+	height: 580px;
+	background: white;
+	margin: 30px auto;
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	.loginTitle,
+	.registTitle {
+		padding-top: 45px;
+		padding-left: 80px;
+		padding-right: 80px;
+		font-size: 18px;
+		line-height: 25px;
+		//color: rgba(0,111,230,1);
+		color: #ff0000;
+		letter-spacing: 0;
+		.companyLogin {
+			float: right;
+			font-size: 15px;
+			color: #3eaffc;
+		}
+		.loginTitleEnglish,
+		.registTitleEnglish {
+			font-size: 14px;
+			//color: #150000;
+			color: #ff0000;
+			letter-spacing: 0;
+			line-height: 25px;
+			margin-left: 10px;
+		}
+	}
+	.pickLoginWay,
+	.pickRole {
+		font-size: 14px;
+		text-align: center;
+		color: #100020;
+		padding-top: 45px;
+		margin-bottom: 42px;
+		> span {
+			cursor: pointer;
+			color: #100020;
+			opacity: 0.3;
+			transition: all 300ms;
+			a {
+				color: #100020;
+				&:hover {
+					color: #ff0000;
+				}
+			}
+			&.active {
+				//color: rgba(0,111,230,1);
+				color: #ff0000;
+				opacity: 1;
+			}
+			&:hover {
+				color: #ff0000;
+				opacity: 1;
+			}
+		}
+	}
+	// 表单输入框样式
+	.inputBlock {
+		width: 300px;
+		height: 50px;
+		background: rgba(34, 42, 80, 0.04);
+		border-radius: 3px;
+		line-height: 50px;
+		margin: 0 auto 30px auto;
+		padding: 0 10px 0 30px;
+		> img,
+		> span {
+			vertical-align: middle;
+			font-size: 14px;
+			//color: #222A50;
+			color: #ff0000;
+			letter-spacing: 0;
+			cursor: pointer;
+		}
+		.sendMsg {
+			margin-left: 15px;
+			cursor: pointer;
+		}
+		.sendMsgNo {
+			margin-left: 15px;
+			cursor: wait;
+		}
+		.realInput {
+			background: transparent;
+			border: none;
+			outline: none;
+			width: 150px;
+			height: 50px;
+			cursor: pointer;
+		}
+		.image-code {
+			background: transparent;
+			border: none;
+			outline: none;
+			width: 150px;
+			height: 50px;
+			cursor: pointer;
+		}
+		#image-canvas {
+			vertical-align: middle;
+			border-radius: 7px;
+			cursor: pointer;
+		}
+		.realInput:focus {
+			border: none;
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	// 登录/注册按钮
+	.LoginBtn,
+	.RegistBtn {
+		width: 300px;
+		height: 48px;
+		border-radius: 3px;
+		margin: 30px auto;
+		//background-color: rgba(0,111,230,1);
+		background-color: #ff0000;
+		border: none;
+		transition: all 300ms;
+		display: block;
+		&:hover {
+			box-shadow: 0 0 1px black;
+		}
+	}
+	.agreeOrDisagreeBlock {
+		text-align: center;
+		margin: 0 auto;
+		margin-top: -30px;
+		margin-bottom: 30px;
+		.agreeOrDisagree {
+			font-size: 12px;
+			color: rgba(16, -2147483648, 32, 0.3);
+			letter-spacing: 0;
+			line-height: 17px;
+		}
+		.showAgreement {
+			font-size: 12px;
+			color: rgba(0, 111, 230, 1);
+			letter-spacing: 0;
+			cursor: pointer;
+		}
+	}
+	.noAcountToRegist,
+	.ownAcountToLogin {
+		width: 300px;
+		margin: 0 auto;
+		font-size: 12px;
+		color: rgba(16, -2147483648, 32, 0.3);
+		letter-spacing: 0;
+		line-height: 17px;
+		text-align: center;
+		border-top: 1px solid #f6f6f6;
+		padding-top: 15px;
+		.toRegist,
+		.toLogin {
+			//color: #100020;
+			color: #ff0000;
+			cursor: pointer;
+		}
+	}
+	.codeLogin {
+		display: block;
+		text-align: center;
+		color: #ff0000;
+		margin-bottom: 15px;
+	}
+}

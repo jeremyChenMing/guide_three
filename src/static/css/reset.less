@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+#react {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  height: 1080px;
+  width: 1920px;
+  &>.main {
+    // height: 1080px;
+    // width: 1920px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background:linear-gradient(180deg,rgba(174,174,174,1) 0%,rgba(128,128,137,1) 100%);
+    ol, ul, dl {
+      margin-bottom: 0;
+    }
+  }
+}
+@duration-time: 3s;
+@keyframes moveIn {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+.chang-enter,
+.chang-appear {
+  //opacity: 0;
+  //transform: scale(0);
+  //transform: translateX(-100vw);
+}
+.chang-enter-active,
+.chang-appear-active {
+  //opacity: 1;
+  //transform: scale(1);
+  //transform: translateX(0);
+  //transition: all 500ms linear;
+  animation: moveIn @duration-time linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chang-enter-done {
+  //opacity: 1;
+  //transform: scale(1);
+  //transform: translateX(0);
+}
+.chang-exit {
+  //opacity: 1;
+  //transform: scale(1);
+  //transform: translateX(0);
+}
+.chang-exit-active {
+  //opacity: 0;
+  //transition: all 500ms linear;
+  //transform: scale(0);
+  //transform: translateX(100vw);
+  animation: moveOut @duration-time linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chang-exit-done {
+  //opacity: 0;
+  margin-top: 0;
+  //transform: scale(0);
+  //transform: translateX(100vw);
+}
