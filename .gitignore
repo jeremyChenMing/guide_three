@@ -1,7 +1,8 @@
 # dependencies
 /node_modules
+/build
 
 /.idea
 /package-lock.json
 /yarn.lock
-/build
+
